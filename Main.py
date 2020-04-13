@@ -13,7 +13,7 @@ def select_clients(train_epoch, single_epoch, client_number):
     return clients[:selected_clients_number]
 
 def main():
-    data = Data(os.getcwd()) 
+    data = Data() 
     X_train = np.asarray(data.X_train)
     Y_train = np.asarray(data.Y_train)
     X_test = np.asarray(data.X_test)
