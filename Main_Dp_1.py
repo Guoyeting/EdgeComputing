@@ -31,7 +31,7 @@ def main():
     baseline3 = [0, 0, 0]
     baseline4 = [0, 0, 0]
   
-    for rep in range(20):
+    for rep in range(1):
         print '******** ', rep, ' *********'
         client_number = 10
         clients = Clients(X_train, Y_train, client_number)
