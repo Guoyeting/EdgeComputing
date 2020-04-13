@@ -56,12 +56,12 @@ def sort(X_train, Y_train):
 
 def read():
     # load train dataset
-    X_train = np.array([[float(j) for j in i.rstrip().split(",")] for i in open("../train.csv").readlines()])
+    X_train = np.array([[float(j) for j in i.rstrip().split(",")] for i in open("train.csv").readlines()])
     Y_train = X_train[:,-1]
     X_train = X_train[:,0:-1]   
     
     # load test dataset
-    X_test = np.array([[float(j) for j in i.rstrip().split(",")] for i in open("../test.csv").readlines()])
+    X_test = np.array([[float(j) for j in i.rstrip().split(",")] for i in open("test.csv").readlines()])
     Y_test = X_test[:,-1]
     X_test = X_test[:,0:-1]    
 
